@@ -727,9 +727,15 @@
       document.getElementsByClassName("plyr__controls")[0].setAttribute("onClick", "player.toggleControls(); player.togglePlay();");
     });
 
+    var sound = false;
+
     player.on('playing', () => {
       player.volume = 1;
       player.muted = false;
+      if (!sound) {
+        setTimeout(() => { player.togglePlay(); player.currentTime = 0; },300)
+        setTimeout(() => { player.togglePlay(); sound = true; },300)
+      }
     });
 
 
