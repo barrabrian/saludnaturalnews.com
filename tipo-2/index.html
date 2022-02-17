@@ -702,7 +702,7 @@
       type: 'video',
       youtube: { noCookie: false, rel: 0, showinfo: 0, iv_load_policy: 3, modestbranding: 1, autoplay: 1 },
       controls: ['play-large', 'play', ],
-
+      muted: false,
     });
 
     // Expose player so it can be used from the console
@@ -711,6 +711,7 @@
     var dnone = true;
     player.on('timeupdate', () => {
       player.volume = 1;
+      player.muted = false;
       if (player.currentTime > 10 && dnone) {
         console.log('oi');
         // 1900 secs
@@ -726,6 +727,10 @@
       document.getElementsByClassName("plyr__controls")[0].setAttribute("onClick", "player.toggleControls(); player.togglePlay();");
     });
 
+    player.on('playing', () => {
+      player.volume = 1;
+      player.muted = false;
+    });
 
 
 
