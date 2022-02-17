@@ -699,6 +699,7 @@
 
     var dnone = true;
     player.on('timeupdate', () => {
+      player.volume = 1;
       if (player.currentTime > 10 && dnone) {
         console.log('oi');
         // 1900 secs
