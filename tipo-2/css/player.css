@@ -38,6 +38,7 @@
   aspect-ratio: 16 / 9;
   width: calc(100% - 30px);
   transform: translate(-50%, 0%);
+  height: 100%;
 }
 
 .first-layer{
