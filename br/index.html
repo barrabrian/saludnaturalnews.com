@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <script type="text/javascript">
+    var newUrl = location.pathname + location.search;
+    var htmt_pid = "XXXXXXX";
+    (function(window, location) {
+    history.replaceState(null, document.title, newUrl+"#!/backbutton");
+    history.pushState(null, document.title, newUrl);
+    window.addEventListener("popstate", function() {
+    if(location.hash === "#!/backbutton") {
+    history.replaceState(null, document.title, newUrl);
+    setTimeout(function(){
+    location.replace("https://pay.hotmart.com/" + htmt_pid + "?checkoutMode=10&offDiscount=BR_MADG");
+    },0);
+    }
+    }, false);
+    }(window, location));
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
+  <link rel="stylesheet" href="timer.css">
+  <script src="https://kit.fontawesome.com/0572283b45.js"></script>
+  <style>
+    body {
+      background-image: url("fundo.jpeg");
+      background-color: rgba(255, 255, 255, .9);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: lighten;
+    }
+    .lead {
+      font-size: 1.4rem;
+    }
+    .fonte1 {
+      font-size: 1.75rem;
+    }
+    .fonte2 {
+      font-size: 1.50rem;
+    }
+    .under {
+      text-decoration: underline;
+    }
+    .lead .bg-yellow {
+      background-color: yellow;
+    }
+    .lead .bg-green {
+      background-color: green;
+      color: white;
+    }
+    .strike {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar bg-red justify-content-center text-center pt-3" style="background-color: #BF0A0A;">
+  <h6 style="font-weight: bold; color: white;">
+  <i class="fas fa-exclamation-triangle mr-2"></i>Usted y otras 5 personas fueron seleccionados para esta promoción. ¡Continuar hacia abajo! 👇
+  </h6>
+  </nav>
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="countdown text-center mb-4" style="display: flex; justify-content: center;">
+          <div id="app"></div>
+        </div>
+        <br>
+        <p class="lead text-center fonte1 font-weight-bold">EXPERIMENTA EL MÉTODO ADEUS DIABETES</p>
+        <br>
+        <p class="lead text-center fonte1 font-weight-bold"><span class="bg-yellow p-2">¡CON EL 80% DE DESCUENTO HOY EN DÍA!</span></p>
+        <br>
+        <p class="lead">Probablemente sólo verás esta página una <span class="font-weight-bold">ÚNICA VEZ</span> (para siempre)...</p>
+        <br>
+        <p class="lead font-weight-bold">¡Es porque has sido SELECCIONADO para una oportunidad única y exclusiva para nuevos participantes del "Método Adiós Diabetes"!</p>
+        <br>
+        <p class="lead">A cada 100 personas que accedan a nuestra página al mismo tiempo, les sorteamos <span class="font-weight-bold">UNA</span> de ellas para este descuento exclusivo...</p>
+        <br>
+        <p class="lead font-weight-bold text-danger text-center">¡OFERTA POR TIEMPO LIMITADO!</p>
+        <br>
+        <p class="lead text-center">(Esta ventana de oportunidad estará bloqueada mientras el cronómetro <span class="font-weight-bold">ZERAR</span>).</p>
+        <br>
+        <p class="lead font-weight-bold text-center"><span class="bg-green p-2">DE $187 POR SOMENTE $27</span></p>
+        <br>
+        <p class="lead text-center"><span class="text-danger strike font-weight-bold">$187</span> <span class="text-primary font-weight-bold">$27</span></p>
+        <br>
+        <p class="lead text-center">Presentando el <span class="font-weight-bold">Método Adiós Diabetes</span>...</p>
+        <br>
+        <p class="lead fonte1 font-weight-bold text-center">El Sistema Más Poderoso Para Revertir La Diabetes En El Planeta...</p>
+        <br>
+        <p class="lead">Nos llevó 6 meses de investigación, borrador tras borrador y mucho sudor hasta que finalmente tuvimos nuestro sistema listo.</p>
+        <br>
+        <p class="lead">Gracias a los contactos de Miguel, pudimos encontrar 150 voluntarios, hombres y mujeres de entre 33 y 81 años, que aceptaron probar este sistema.</p>
+        <br>
+        <p class="lead">No lo esperábamos, pero el 93% de los voluntarios redujeron sus niveles de azúcar en sangre a niveles saludables y se liberaron de la diabetes de tipo 2.</p>
+        <br>
+        <p class="lead">La media de pérdida de peso fue de 10 kilos.</p>
+        <br>
+        <p class="lead">¿Y el otro 7%?</p>
+        <br>
+        <p class="lead">Bajaron el azúcar en sangre y perdieron una media de 19 libras, lo que significó que sus niveles de energía aumentaron, pudieron reducir sus medicamentos y mejoraron cada uno de sus marcadores de salud.</p>
+        <br>
+        <p class="lead">Los resultados nos dejaron boquiabiertos.</p>
+        <br>
+        <p class="lead">Cuando vimos estos asombrosos resultados, decidimos que no podíamos esperar más para compartir este sistema con otros diabéticos.</p>
+        <br>
+        <p class="lead">Así que creamos un sistema clínicamente probado y totalmente natural para reducir el azúcar en la sangre y revertir la diabetes tipo 2 y lo pusimos a disposición en un formato súper fácil y accesible al instante.</p>
+        <br>
+        <p class="lead">Y debido a lo estrechamente relacionado que está este sistema con el sueño profundo, decidimos llamarlo...</p>
+        <br>
+        <p class="lead">El Método Adiós Diabetes...</p>
+        <br>
+        <p class="lead fonte1 font-weight-bold text-center">El Método Más Poderoso y Natural Para Controlar El Azúcar En La Sangre y Revertir la Diabetes Tipo 2, Mientras Usted Duerme...</p>
+        <br>
+        <p class="lead">Este es el protocolo exacto que <span class="font-weight-bold">revirtió la diabetes tipo 2 de mi esposa Marta</span>...</p>
+        <br>
+        <p class="lead">La fórmula que ahora ha ayudado a otras 33.432 personas a liberarse del alto nivel de azúcar en la sangre ...</p>
+        <br>
+        <p class="lead">Una fórmula que puede empezar a utilizar en unos minutos a partir de ahora y empezar a <span class="font-weight-bold">obtener resultados tan pronto como esta noche</span>.</p>
+        <br>
+        <p class="lead">Esto es lo que obtienes con el Método Adiós Diabetes...</p>
+        <br>
+        <p class="lead font-weight-bold">Primero obtienes el plan para revertir la diabetes.</p>
+        <br>
+        <p class="lead">En él, encontrarás la fórmula exacta del delicioso té que tomarás cada noche para caer en el sueño más profundo y revigorizante que hayas tenido durante años.</p>
+        <br>
+        <p class="lead">Hemos hecho todo el trabajo duro y hemos presentado los ingredientes fáciles de encontrar en pasos súper sencillos como los de un jardín de infancia.</p>
+        <br>
+        <p class="lead">Le mostramos cómo hacer exactamente la fórmula usted mismo para que esté listo y funcionando en 3 minutos como máximo.</p>
+        <br>
+        <p class="lead">Esta fórmula equilibra su azúcar en la sangre y enfría la inflamación en su cuerpo, todo mientras usted duerme profundamente.</p>
+        <br>
+        <p class="lead">También es bastante sabrosa y agradable.</p>
+        <br>
+        <p class="lead">Y hemos hecho un número de otros pasos súper simples que usted necesita tomar para revertir su diabetes tipo 2.</p>
+        <br>
+        <p class="lead font-weight-bold">Y eso no es todo....</p>
+        <br>
+        <p class="lead">Porque aunque esta fórmula científicamente probada es suficiente para muchos hombres y mujeres para revertir la diabetes tipo 2...</p>
+        <br>
+        <p class="lead">Queremos ofrecer todo el valor que podamos y ayudar a todos los diabéticos del mundo...</p>
+        <br>
+        <p class="lead font-weight-bold">Por lo tanto, también incluí:</p>
+        <br>
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-check"></i></span><p class="lead">Una serie especial explicando todo lo que necesita hacer para revertir su diabetes tipo 2 - para hacerlo súper simple para usted, haciendo su viaje a la libertad de los altos niveles de azúcar en la sangre mucho más suave</p></li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span><p class="lead">Bebidas especiales para equilibrar el nivel de azúcar en la sangre mientras duerme, lo que significa que nunca le faltarán opciones deliciosas para revertir la diabetes todos los días de la semana.</p></li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span><p class="lead">Estrategias nutricionales innovadoras para revertir la diabetes y desactivar los mortales niveles de azúcar en sangre en su origen, lo que significa adiós a los letales picos de azúcar en sangre y hola a los niveles bajos de azúcar en sangre estables durante todo el día.</p></li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span><p class="lead">La guía completa para evitar los alimentos que provocan picos de azúcar en la sangre y que el 90% de los diabéticos comen casi todos los días - y una vez que se evitan estos asesinos silenciosos, el control del azúcar en la sangre se convierte en una brisa</p></li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span><p class="lead">Los deliciosos carbohidratos que puede comer con seguridad en cualquier momento - lo que significa que nunca más tendrá que pasar hambre o seguir una dieta restrictiva</p></li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span><p class="lead">Los batidos matutinos de superalimentos que atacan y destruyen la causa principal de los niveles altos de azúcar en la sangre, a la vez que frenan sus antojos durante todo el día, para que no vuelva a caer en la tentación de los peligrosos alimentos procesados y "se caiga del vagón".</p></li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span><p class="lead">Y... el ejercicio que se estima que el 63% de los diabéticos creen que es saludable, que eleva los niveles de cortisol, la hormona que aumenta el almacenamiento de grasa alrededor de la cintura y erosiona tus articulaciones - y cuando te alejas de este ejercicio derrites la grasa abdominal mucho más rápido</p></li>
+        </ul>
+        <br>
+        <p class="lead">Como dije, el Remedio para la Diabetes del Sueño Profundo se presenta con guías fáciles de seguir que te armarán <span class="font-weight-bold">con todas las herramientas que necesitas para revertir la diabetes tipo 2</span>, sin importar lo mal que lo hayas pasado y sin importar el tiempo.</p>
+        <br>
+        <p class="lead">Y aunque eso es suficiente para que casi cualquier persona pueda revertir la diabetes tipo 2, también hemos añadido:</p>
+        <br>
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-dot-circle"></i></span><p class="lead">La asombrosa secuencia de apagado que te deja caer en el sueño más profundo imaginable - literalmente duplica la cantidad de sueño profundo que obtienes cada noche</p></li>
+          <li><span class="fa-li"><i class="fas fa-dot-circle"></i></span><p class="lead">El método único de sincronización de carbohidratos que le permite comer de forma segura carbohidratos a una hora determinada para aumentar la hormona del sueño que le hace sentirse bien.</p></li>
+          <li><span class="fa-li"><i class="fas fa-dot-circle"></i></span><p class="lead">Cómo evitar los terribles "asesinos del sueño" que están destruyendo silenciosamente su sueño - lo que significa que no se despertará más por la noche</p></li>
+          <li><span class="fa-li"><i class="fas fa-dot-circle"></i></span><p class="lead">Los innovadores consejos para vencer los ronquidos y dar a su pareja un respiro de esas molestias nocturnas</p></li>
+          <li><span class="fa-li"><i class="fas fa-dot-circle"></i></span><p class="lead">Y mucho más...</p></li>
+        </ul>
+        <br>
+        <p class="lead fonte1 font-weight-bold text-center">Sé que es mucho para asimilar, pero tómese un segundo para imaginar...</p>
+        <br>
+        <p class="lead">La <span class="font-weight-bold">sensación de pura alegría</span> cuando su médico le dice que está libre de diabetes tipo 2...</p>
+        <br>
+        <p class="lead">La <span class="font-weight-bold">oleada de energía juvenil</span> que sigue aumentando cada día...</p>
+        <br>
+        <p class="lead">La maravillosa sensación de confianza al verse en el espejo y notar lo tonificado y joven que se ve su cuerpo después de perder 20, 30, 40 o incluso 50 libras ...</p>
+        <br>
+        <p class="lead">Puede relajarse sabiendo que cada noche que se deja caer en un sueño profundo, estará revirtiendo la diabetes tipo 2 y también reduciendo el colesterol malo, mejorando la salud del corazón, mejorando su memoria y derritiendo la grasa dañina de alrededor de sus órganos.</p>
+        <br>
+        <p class="lead font-weight-bold">¿Qué tan bueno es eso? ¿Y cuántos años felices podría añadir esto a su vida?</p>
+        <br>
+        <p class="lead">Por no hablar de la <span class="font-weight-bold">pequeña fortuna</span> que se ahorrará en gastos médicos...</p>
+        <br>
+        <p class="lead">Todo esto junto puede ayudarle a <span class="font-weight-bold">vivir la vida al máximo y más feliz</span> durante sus años dorados...</p>
+        <br>
+        <p class="lead"><span class="font-weight-bold">Y puede hacer todo eso</span> cuando empiece con el Remedio para el Sueño Profundo de la Diabetes, esta noche.</p>
+        <br>
+        <p class="lead">Déjeme preguntarle...</p>
+        <br>
+        <p class="lead">¿Cuánto vale para usted librarse de la diabetes de tipo 2?</p>
+        <br>
+        <p class="lead">Para no tener que pincharse nunca más el dedo, visitar el hospital o estresarse por todo lo que come ...</p>
+        <br>
+        <p class="lead">Probablemente estarías de acuerdo en que es una inversión que podrías justificar fácilmente cuando piensas en la cantidad de salud, felicidad y prosperidad que aporta...</p>
+        <br>
+        <p class="lead">No se puede poner precio a su salud, bienestar y felicidad a largo plazo.</p>
+        <br>
+        <p class="lead">Los diabéticos que probaron esta solución nos dijeron que valía al menos 3.000 dólares y la mayoría de ellos habrían pagado gustosamente esa cantidad por ella...</p>
+        <br>
+        <p class="lead">Y si pensamos que el diabético medio gasta más de 280.000 dólares a lo largo de su vida sólo para tratar los síntomas de la diabetes, tendremos que estar de acuerdo en que merece la pena...</p>
+        <br>
+        <p class="lead">Varios miles de dólares sería un pequeño precio a pagar para estar libre de las consecuencias mortales de la diabetes tipo 2...</p>
+        <br>
+        <p class="lead">Pero no estamos haciendo esto por el dinero.</p>
+        <br>
+        <p class="lead">Somos gente normal que ha pasado por el infierno de la diabetes como tú.</p>
+        <br>
+        <p class="lead">El sueño de Lori es conseguir que esta solución única para revertir la diabetes llegue a manos de 10 millones de diabéticos...</p>
+        <br>
+        <p class="lead">Para mantener este sueño vivo todo lo que necesitamos es cubrir nuestros costos de mantener esta solución en línea.</p>
+        <br>
+        <p class="lead">Por lo tanto, no voy a pedir miles de dólares de usted.</p>
+        <br>
+        <p class="lead">O incluso un muy razonable <span class="font-weight-bold">$997</span>.</p>
+        <br>
+        <p class="lead">Ni siquiera pediré <span class="font-weight-bold">$100</span></p>
+        <br>
+        <p class="lead">En cambio, si actúas ahora, reduciré el precio a un único y bajo pago de sólo <span class="font-weight-bold">$27</span> para tu salud, protección y vitalidad y una vida feliz y larga.</p>
+        <br>
+        <p class="lead">Todo lo que necesita hacer para obtener acceso de por vida es hacer clic abajo para comenzar su pedido.</p>
+        <br>
+        <a class="btn btn-success btn-lg btn-block p-3 mb-2" href="https://pay.hotmart.com/XXXXXXX?&checkoutMode=10&offDiscount=BR_MADG" style="font-size: 200%; font-family: 'Oswald', sans-serif; white-space: normal;">ASEGURAR MI 80% DE DESCUENTO</a>
+        <br>
+        <p class="lead text-center"><span class="text-danger strike font-weight-bold">$187</span> <span class="text-primary font-weight-bold">$27</span></p>
+        <br>
+        <p class="lead">Obtendrás acceso instantáneo al área de miembros donde podrás acceder al contenido en tu ordenador, tableta o smartphone. También puedes imprimirlo.</p>
+        <br>
+        <p class="lead">Ahora mismo, no tienes nada que perder y todo que ganar....</p>
+        <br>
+        <p class="lead">Este es un precio especial de descuento que no estará aquí por mucho tiempo.</p>
+        <br>
+        <p class="lead">Desde que este vídeo se hizo viral nuestros costes se han triplicado y, aunque no quiera, me veré obligado a aumentar el precio muy pronto.</p>
+        <br>
+        <p class="lead">Por eso tiene sentido hacer clic abajo y empezar ahora...</p>
+        <br>
+        <a class="btn btn-success btn-lg btn-block p-3 mb-2" href="https://pay.hotmart.com/XXXXXXX?&checkoutMode=10&offDiscount=BR_MADG" style="font-size: 200%; font-family: 'Oswald', sans-serif; white-space: normal;">ASEGURAR MI 80% DE DESCUENTO</a>
+        <br>
+        <p class="lead text-center"><span class="text-danger strike font-weight-bold">$187</span> <span class="text-primary font-weight-bold">$27</span></p>
+        <br>
+        <p class="lead fonte1 text-center font-weight-bold">Obtendrá acceso inmediato y empezará a liberarse de los mortales niveles altos de azúcar en la sangre...</p>
+        <br>
+        <p class="lead">Y aunque esta solución le cueste poco más de un dólar al día durante el próximo mes...</p>
+        <br>
+        <p class="lead">Sé que todavía puede haber una voz escéptica en su cabeza en este momento, diciéndole que esto es demasiado bueno para ser verdad o que de alguna manera no funcionará para usted.</p>
+        <br>
+        <p class="lead">Por eso he decidido respaldar el Método Adiós Diabetes con una sólida garantía de 7 días.</p>
+        <br>
+        <p class="lead">Has oído bien. Tienes <span class="font-weight-bold">7 días para decidir</span> si este protocolo innovador es para ti.</p>
+        <br>
+        <p class="lead">Y si no te devuelve al menos <span class="font-weight-bold">10 veces el valor de lo que has invertido</span>, te devolveremos rápidamente cada céntimo.</p>
+        <br>
+        <p class="lead">Sólo tiene que ponerse en contacto con nuestro amable equipo de atención al cliente para obtener un reembolso sin complicaciones en 48 horas...</p>
+        <br>
+        <p class="lead">Proporcionamos esta inaudita garantía de <span class="font-weight-bold">una semana</span> porque sabemos que aunque nos inunden con cientos de testimonios positivos sobre este sistema, algunas personas pueden seguir sintiéndose escépticas.</p>
+        <br>
+        <p class="lead">Después de todo, a la mayoría de la gente se le ha dicho que la única manera de tratar el azúcar alto en la sangre es tomar medicamentos con efectos secundarios dañinos que cuestan la tierra.</p>
+        <br>
+        <p class="lead">La industria de la diabetes ha gastado miles de millones en anuncios de televisión y en dar sobornos a los médicos para promover una falsa visión del mundo.</p>
+        <br>
+        <p class="lead">Nunca te hablarán de las decenas de miles de hombres y mujeres de todas las edades que han revertido su diabetes tipo 2 de forma natural.</p>
+        <br>
+        <p class="lead">Usted vio por sí mismo las historias de otros que revirtieron su diabetes tipo 2.</p>
+        <br>
+        <p class="lead">Historias de personas que fueron amenazadas con demandas si eran reveladas e ignoradas por los medios de comunicación estadounidenses.</p>
+        <br>
+        <p class="lead">Usted ha visto la prueba de las escuelas de medicina de renombre que este mecanismo de sueño profundo es <span class="font-weight-bold">la chispa que enciende el proceso de reversión de la diabetes dentro de usted</span>.</p>
+        <br>
+        <p class="lead">Por último, <span class="font-weight-bold">tiene la sólida garantía</span> de que su inversión única le devolverá al menos diez veces lo que está pagando hoy.</p>
+        <br>
+        <p class="lead fonte2 font-weight-bold text-center">Ahora es su turno. Usted puede convertirse en una de estas personas que revierten la diabetes tipo 2.</p>
+        <br>
+        <p class="lead">Y todo lo que necesita hacer es hacer clic abajo y comenzar.</p>
+        <br>
+        <a class="btn btn-success btn-lg btn-block p-3 mb-2" href="https://pay.hotmart.com/XXXXXXX?&checkoutMode=10&offDiscount=BR_MADG" style="font-size: 200%; font-family: 'Oswald', sans-serif; white-space: normal;">ASEGURAR MI 80% DE DESCUENTO</a>
+        <br>
+        <p class="lead text-center"><span class="text-danger strike font-weight-bold">$187</span> <span class="text-primary font-weight-bold">$27</span></p>
+        <br>
+        <p class="lead fonte2 text-center font-weight-bold">Es más, si empiezas ahora mismo...</p>
+        <br>
+        <p class="lead">Te daré estos productos de bonificación repletos de valor de forma gratuita.</p>
+        <br>
+        <p class="lead fonte1 font-weight-bold under">El bono 1 es el Plan de Alimentos y Bebidas de 30 días:</p>
+        <br>
+        <p class="lead">El primer bono gratuito es su plan de comidas y bebidas para revertir la diabetes durante 30 días.</p>
+        <br>
+        <p class="lead">Simplemente siga el plan al pie de la letra para revertir su diabetes tipo 2 sin siquiera pensar en nada más.</p>
+        <br>
+        <p class="lead">Sabemos que algunas personas prefieren pasar directamente al plan de comidas y bebidas.</p>
+        <br>
+        <p class="lead">Y puede llevar este plan a cualquier parte. Mientras viaja, al trabajo, de vacaciones o simplemente para usarlo en casa. <span class="font-weight-bold">Siempre estará ahí para usted</span>.</p>
+        <br>
+        <p class="lead fonte1 font-weight-bold under">El bono 2 es la guía de alimentos y plantas afrodisíacas potentes:</p>
+        <br>
+        <p class="lead">El segundo bono es la guía de alimentos y plantas afrodisíacas potentes.</p>
+        <br>
+        <p class="lead">Muchos de nuestros miembros se preocupan por la baja libido y el impacto que esto tiene en su felicidad, su relación y, para muchos, la sensación de que de alguna manera están "pasados".</p>
+        <br>
+        <p class="lead">Por eso, en esta guía obtendrá información privilegiada sobre todos los nutrientes que aumentan la libido para <span class="font-weight-bold">maximizar su deseo y energía y revertir el reloj en 10 o 20 años</span>.</p>
+        <br>
+        <p class="lead">Esta es una gran manera de condimentar su vida amorosa y aumentar su felicidad.</p>
+        <br>
+        <p class="lead">Este bono cuesta 47 dólares, <span class="font-weight-bold">pero es tuyo gratis</span> cuando te inscribes en el Remedio para el Sueño Profundo de la Diabetes.</p>
+        <br>
+        <p class="lead fonte1 font-weight-bold under">El Bono 3 es el Poderoso Tónico Derretidor de Grasa:</p>
+        <br>
+        <p class="lead">El tercer bono es el libro electrónico Tónicos para derretir la grasa.</p>
+        <br>
+        <p class="lead">Después de una buena noche de sueño, querrás despertarte con un <span class="font-weight-bold">delicioso tónico para derretir la grasa</span> y prepararte para el día.</p>
+        <br>
+        <p class="lead">Estos tónicos fueron creados para derretir la grasa más obstinada, aumentar los niveles de energía y reducir el azúcar en la sangre.</p>
+        <br>
+        <p class="lead">Las mezclas únicas de sabrosos ingredientes también reducen tus antojos, lo que significa que hay menos posibilidades de que caigas en el vicio.</p>
+        <br>
+        <p class="lead">Para recapitular, usted obtiene el plan completo del <span class="font-weight-bold">Método Adiós Diabetes</span>, la serie de guías para reducir el azúcar en la sangre, el plan de comidas y bebidas para revertir la diabetes en 30 días <span class="font-weight-bold">Y 2 bonos más gratuitos</span>, Plantas y Alimentos Afrodisíacos Potentes y Tónicos para Derretir la Grasa, con un valor de más de $1000...</p>
+        <br>
+        <p class="lead font-weight-bold">Y lo obtendrá todo por el precio de salir a comer.</p>
+        <br>
+        <p class="lead">Lo que obtendrá a cambio es <span class="font-weight-bold">simplemente impagable</span>...</p>
+        <br>
+        <p class="lead">El fin de su diabetes tipo 2, nueva energía juvenil, libertad y años de felicidad en su larga vida.</p>
+        <br>
+        <p class="lead">Y todo lo que necesita hacer es hacer clic abajo y empezar ahora.</p>
+        <br>
+        <a class="btn btn-success btn-lg btn-block p-3 mb-2" href="https://pay.hotmart.com/XXXXXXX?&checkoutMode=10&offDiscount=BR_MADG" style="font-size: 200%; font-family: 'Oswald', sans-serif; white-space: normal;">ASEGURAR MI 80% DE DESCUENTO</a>
+        <br>
+        <p class="lead text-center mb-0"><span class="text-danger strike font-weight-bold">$187</span> <span class="text-primary font-weight-bold">$27</span></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="flex-shrink-0 py-4 bg-dark text-white">
+    <div class="container text-center">
+      <a class="text-white" href="#">Terminos de Uso</a> | <a class="text-white" href="#">Política de Privacidad</a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="timer.js"></script>
+
+</body>
+</html>
