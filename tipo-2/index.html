@@ -685,8 +685,15 @@
     document.getElementById("locationJS").innerHTML = geoplugin_city();
 
     function redirect() {
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var utm_source = new URL(document.location).searchParams.get("utm_source");
+      var utm_campaign = new URL(document.location).searchParams.get("utm_campaign");
+      var utm_content = new URL(document.location).searchParams.get("utm_content");
+      var utm_medium = new URL(document.location).searchParams.get("utm_medium");
+            
       let htmt_pid = "XXXXXXXX";
-      // location.href = "https://pay.hotmart.com/" + htmt_pid + "?off=35k679me&checkoutMode=10";
+      // location.href = "https://pay.hotmart.com/" + htmt_pid + "?off=35k679me&checkoutMode=10&utm_source="+utm_source+"&utm_campaign="+utm_campaign+"&utm_medium="+utm_medium+"&utm_content="+utm_content;
     }
 
   </script>
