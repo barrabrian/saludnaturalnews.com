@@ -17,10 +17,12 @@
 .plyr--video .plyr__controls {
   cursor: pointer;
   padding-top: calc(var(--plyt-control-spacing, 105px)*3.5) !important;
+  z-index: 99 !important;
+
 }
 
 .plyr__control--overlaid {
-  z-index: 5 !important;
+  z-index: 100 !important;
 }
 
 #p{
