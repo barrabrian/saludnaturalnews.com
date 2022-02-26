@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+
+
+
+  <style media="screen">
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+    :root{
+      --plyr-color-main: #1890FF;
+      --plyr-menu-arrow-size: 15px;
+      --plyr-control-icon-size: 45px;
+      --plyr-control-spacing: 20px;
+      --plyr-video-controls-background: rgba(0, 0, 0, 0);
+    }
+
+    .plyr--video {
+      box-shadow: 0 0 7px 3px rgb(0,0,0,0.3);
+    }
+
+    .plyr__controls .plyr__controls__item {
+      display: none;
+    }
+
+    .plyr--video .plyr__controls {
+      cursor: pointer;
+      padding-top: calc(var(--plyt-control-spacing, 105px)*3.5) !important;
+      z-index: 99 !important;
+      height: 100%;
+
+    }
+
+    .plyr__control--overlaid {
+      z-index: 100 !important;
+    }
+
+    #p{
+      /* position: absolute;
+      top: 0;
+      z-index: 10;
+      aspect-ratio: 16 / 9;
+      max-width: 100%; */
+
+
+
+      position: absolute;
+      top: 0;
+      z-index: 10;
+
+      width: 100%;
+      /* transform: translate(-50%, 0%); */
+      height: 110%;
+      aspect-ratio: 16 / 9;
+    }
+
+    .first-layer{
+      position: absolute;
+      top: 0;
+      z-index: 11;
+      width: 100%;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      position: absolute;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      aspect-ratio: 16/9;
+    }
+
+    .first-layer .box{
+      border-radius: 10px;
+      background-color: #1890FF;
+      border: 2px solid #FFFFFF;
+      width: 50%;
+      height: auto;
+      padding: 0.5em;
+      max-width: 540px;
+      text-align: center;
+    }
+
+    .first-layer .box .fl-span {
+      font-family: Arial,Helvetica,sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      display: block;
+      text-align: center;
+      color: #FFFFFF;
+      white-space: normal;
+      width: 100%;
+      line-height: 1.1em;
+      font-size: 1em;
+      padding: 0.5em 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .first-layer .box svg {
+      width: 100%;
+      color: white;
+    }
+
+    @media only screen and (max-width: 600px) {
+    .first-layer .box{
+      width: 70%;
+    }
+    .first-layer .box svg {
+      width: 50%;
+    }
+  }
+
+  </style>
+
+  <script src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
+
+  <div class="plyr__video-embed" data-plyr="play" id="player">
+    <iframe
+      src="https://www.youtube.com/embed/MlEnGUI56GM?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+      allowtransparency
+      allow="autoplay"
+    ></iframe>
+    <!-- <div class="" data-plyr="play" style="z-index:5; background: pink; width: 100%; height: 300px; position: absolute"></div> -->
+
+
+    <!-- <div class="" data-plyr="play" style="z-index:5; background: pink; width: 100%; height: 300px; position: absolute"></div> -->
+
+  </div>
+  <div class="first-layer" onClick="stopVideo();player.toggleControls(); player.togglePlay();">
+    <div class="box">
+      <center>
+        <span class="fl-span">Tu video ya comenzó</span>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96.75px" height="80.563px" viewBox="7.999 9.062 46.75 32.563" enable-background="new 7.999 9.062 46.75 32.563" xml:space="preserve">
+          <style>@-webkit-keyframes BLINK {0% { opacity: 0; }33% { opacity: 1; }66% { opacity: 1; }100% { opacity: 0; }}@keyframes BLINK {0% { opacity: 0; }33% { opacity: 1; }66% { opacity: 1; }100% { opacity: 0; }}.blink_1 {-webkit-animation: BLINK 2s infinite;animation: BLINK 2s infinite;opacity: 0;} .blink_2 {-webkit-animation: BLINK 2s infinite .3s;animation: BLINK 2s infinite .3s;opacity: 0;}.blink_3 {-webkit-animation: BLINK 2s infinite .6s;animation: BLINK 2s infinite .6s;opacity: 0;}.smartplay-svg-color {fill: #FFFFFF !important;}.adjustable {border: 4px solid red;}</style>
+          <g class="adjustable fg">
+            <path class="smartplay-svg-color" d="M53.249,39.616c-0.186,0-0.371-0.051-0.537-0.157l-43.5-27.75c-0.466-0.297-0.603-0.916-0.306-1.381c0.298-0.466,0.917-0.601,1.381-0.306l43.5,27.75c0.467,0.297,0.604,0.916,0.307,1.381C53.901,39.453,53.579,39.616,53.249,39.616z"></path><path class="blink_3 smartplay-svg-color" d="M48.896,33.467l1.699,1.085c3.497-7.791,2.073-17.271-4.313-23.659c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414C50.581,18.019,51.913,26.463,48.896,33.467z"></path>
+            <path class="blink_3 smartplay-svg-color" d="M46.926,36.956c-0.612,0.863-1.286,1.695-2.059,2.469c-0.392,0.391-0.392,1.023,0,1.414c0.194,0.195,0.45,0.293,0.707,0.293c0.256,0,0.512-0.098,0.706-0.293c0.878-0.878,1.642-1.824,2.333-2.807L46.926,36.956z"></path><path class="blink_2 smartplay-svg-color" d="M42.543,29.415l1.777,1.135c1.545-5.315,0.229-11.293-3.953-15.476c-0.392-0.391-1.023-0.391-1.414,0c-0.392,0.391-0.392,1.023,0,1.414C42.454,19.987,43.639,24.925,42.543,29.415z"></path>
+            <path class="blink_2 smartplay-svg-color" d="M41,33.174c-0.563,0.94-1.235,1.837-2.047,2.646c-0.391,0.392-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.916-0.914,1.676-1.924,2.317-2.984L41,33.174z"></path><path class="blink_1 smartplay-svg-color" d="M35.771,25.094l2.003,1.277c0.012-0.203,0.029-0.404,0.029-0.609c0-3.079-1.2-5.974-3.381-8.153c-0.391-0.391-1.022-0.391-1.414,0c-0.391,0.391-0.391,1.023,0,1.414C34.652,20.666,35.613,22.802,35.771,25.094z"></path>
+            <path class="blink_1 smartplay-svg-color" d="M35.084,29.401c-0.474,1.145-1.172,2.197-2.076,3.1c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293c0.257,0,0.513-0.098,0.707-0.293c1.008-1.006,1.795-2.17,2.361-3.43L35.084,29.401z"></path><polygon class="smartplay-svg-color" points="28.124,20.215 28.124,14.991 24.635,17.99  "></polygon><path class="smartplay-svg-color" d="M20.921,20.366h-6.423c-0.553,0-1,0.508-1,1.135v8.229c0,0.627,0.447,1.135,1,1.135h7.375l6.25,5.875V24.96L20.921,20.366z"></path>
+          </g>
+        </svg>
+        <span class="fl-span">Haga clic para escuchar</span>
+      <center>
+    </div>
+  </div>
+  <div id="p"></div>
+  <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+
+
+    !function(a){var b=/iPhone/i,c=/iPod/i,d=/iPad/i,e=/(?=.*\bAndroid\b)(?=.*\bMobile\b)/i,f=/Android/i,g=/(?=.*\bAndroid\b)(?=.*\bSD4930UR\b)/i,h=/(?=.*\bAndroid\b)(?=.*\b(?:KFOT|KFTT|KFJWI|KFJWA|KFSOWI|KFTHWI|KFTHWA|KFAPWI|KFAPWA|KFARWI|KFASWI|KFSAWI|KFSAWA)\b)/i,i=/IEMobile/i,j=/(?=.*\bWindows\b)(?=.*\bARM\b)/i,k=/BlackBerry/i,l=/BB10/i,m=/Opera Mini/i,n=/(CriOS|Chrome)(?=.*\bMobile\b)/i,o=/(?=.*\bFirefox\b)(?=.*\bMobile\b)/i,p=new RegExp("(?:Nexus 7|BNTV250|Kindle Fire|Silk|GT-P1000)","i"),q=function(a,b){return a.test(b)},r=function(a){var r=a||navigator.userAgent,s=r.split("[FBAN");return"undefined"!=typeof s[1]&&(r=s[0]),s=r.split("Twitter"),"undefined"!=typeof s[1]&&(r=s[0]),this.apple={phone:q(b,r),ipod:q(c,r),tablet:!q(b,r)&&q(d,r),device:q(b,r)||q(c,r)||q(d,r)},this.amazon={phone:q(g,r),tablet:!q(g,r)&&q(h,r),device:q(g,r)||q(h,r)},this.android={phone:q(g,r)||q(e,r),tablet:!q(g,r)&&!q(e,r)&&(q(h,r)||q(f,r)),device:q(g,r)||q(h,r)||q(e,r)||q(f,r)},this.windows={phone:q(i,r),tablet:q(j,r),device:q(i,r)||q(j,r)},this.other={blackberry:q(k,r),blackberry10:q(l,r),opera:q(m,r),firefox:q(o,r),chrome:q(n,r),device:q(k,r)||q(l,r)||q(m,r)||q(o,r)||q(n,r)},this.seven_inch=q(p,r),this.any=this.apple.device||this.android.device||this.windows.device||this.other.device||this.seven_inch,this.phone=this.apple.phone||this.android.phone||this.windows.phone,this.tablet=this.apple.tablet||this.android.tablet||this.windows.tablet,"undefined"==typeof window?this:void 0},s=function(){var a=new r;return a.Class=r,a};"undefined"!=typeof module&&module.exports&&"undefined"==typeof window?module.exports=r:"undefined"!=typeof module&&module.exports&&"undefined"!=typeof window?module.exports=s():"function"==typeof define&&define.amd?define("isMobile",[],a.isMobile=s()):a.isMobile=s()}(this);
+    // if (isMobile.any){
+      // document.getElementsByClassName('first-layer')[0].style.display = "none";
+      // document.getElementById('p').style.display = "none";
+    // }else {
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    // }
+
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player1;
+    function onYouTubeIframeAPIReady() {
+      player1 = new YT.Player('p', {
+        height: '',
+        width: '720',
+        videoId: 'MlEnGUI56GM',
+        playerVars: { 'autoplay': 1, 'controls': 0, 'muted':  1 },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+      event.target.setVolume(0);
+      event.target.playVideo();
+      event.target.seekTo(0, false);
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = false;
+    function onPlayerStateChange(event) {
+      console.log(event);
+      if (event.data == YT.PlayerState.PLAYING && !done) {
+        //setTimeout(stopVideo, 6000);
+        //done = true;
+        // console.log(event.target.getCurrentTime());
+
+        // var x = new Promise((resolve) => {
+        //   while (event.target.getCurrentTime() < 6){
+        //     setTimeout(() => { console.log(event.target.getCurrentTime()); }, 1000);
+        //     if (event.target.getCurrentTime() > 6 ) {
+        //       resolve(1);
+        //     }
+        //   }
+        // });
+        // x.then(() => {console.log("cheguei!");});
+
+      }
+    }
+
+
+
+    function stopVideo() {
+      player1.stopVideo();
+      player1.destroy();
+      document.getElementsByClassName('first-layer')[0].style.display = "none";
+      document.getElementById('p').style.display = "none";
+    }
+
+
+  </script>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+  <script src="https://ssl.geoplugin.net/javascript.gp?k=292af9fb00c1353d" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    document.getElementById("locationJS").innerHTML = geoplugin_city();
+
+    function redirect() {
+
+    }
+
+  </script>
+
+  <script src="js/scripts2.js"></script>
+  <script src="js/jquery.enllax.min.js"></script>
+  <script src="js/parallax.js"></script>
+
+  <script type="text/javascript">
+    // Change "{}" to your options:
+    // https://github.com/sampotts/plyr/#options
+    const player = new Plyr("#player", {
+      type: 'video',
+      youtube: { noCookie: false, rel: 0, showinfo: 0, iv_load_policy: 3, modestbranding: 1, autoplay: 1 },
+      controls: ['play-large', 'play', ],
+      muted: false,
+    });
+
+    // Expose player so it can be used from the console
+    window.player = player;
+
+    var dnone = true;
+    player.on('timeupdate', () => {
+      player.volume = 1;
+      player.muted = false;
+      if (player.currentTime > 1900 && dnone) {
+        console.log('oi');
+        // 1900 secs
+        document.getElementById('hid').style.display = "block";
+        document.getElementById('hid2').style.display = "block";
+        dnone = false;
+      }
+    });
+
+    player.on('ready', () => {
+      player.currentTime = 0;
+      player.volume = 1;
+      document.getElementsByClassName("plyr__controls")[0].setAttribute("onClick", "player.toggleControls(); player.togglePlay();");
+    });
+
+    var sound = false;
+
+    player.on('playing', () => {
+      player.volume = 1;
+      player.muted = false;
+      if (!sound) {
+        player.currentTime = 0;
+        sound = true;
+        if (isMobile.any) {
+          setTimeout(() => { player.togglePlay(); },300)
+          setTimeout(() => { player.togglePlay(); },300)
+        }
+      }
+    });
+
+
+  </script>
+
+
+  </body>
+</html>
