@@ -219,10 +219,12 @@
           <div class="som text-dark"> <img src="img/audio.svg"> ¡Asegúrate de que tu sonido esté encendido!</div>
         </div>
       </div>
-      <div class="row button_container" id="hid" style="display: none;">
+      <div class="row button_container" id="hid" style="color: black; display: none;">
         <div class="col">
 
           <div align="center">
+            <p style="background: #f7cd4a; color: green; font-size: 1.5em; font-weight: 600;">¡Usted ganó un descuento especial!</p>
+            <p style="font-size: 1.5em;"><span style="text-decoration: line-through;">&nbsp; $37 &nbsp;</span> por solo <b style="color: green;">$9</b></p>
             <button target="_self" class="button linkCheckout link-stored call_to_action_green" data-theme="button" onclick="redirect()"> QUIERO ACCEDER AL MÉTODO ADIÓS DIABETES </button>
           </div>
 
@@ -693,8 +695,8 @@
 
     function redirect() {
       let htmt_pid = "C66894310Q";
-      let htmt_off = "bpm5r9xo";
-      location.href = "https://pay.hotmart.com/" + htmt_pid + "?off=" + htmt_off + "&checkoutMode=10&offDiscount=D50&utm_source="+utm_source+"&utm_campaign="+utm_campaign+"&utm_medium="+utm_medium+"&utm_content="+utm_content;
+      let htmt_off = "pb0f7079";
+      location.href = "https://pay.hotmart.com/" + htmt_pid + "?off=" + htmt_off + "&checkoutMode=10&utm_source="+utm_source+"&utm_campaign="+utm_campaign+"&utm_medium="+utm_medium+"&utm_content="+utm_content;
     }
 
   </script>
