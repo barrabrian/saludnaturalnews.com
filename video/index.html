@@ -260,7 +260,12 @@
           <div class="col">
             <div align="center">
 
-              <p>Ingresa ahora mismo con el 90% de descuento, Dale click al botón abajo</p>
+              <!-- <p>Ingresa ahora mismo con el 90% de descuento, Dale click al botón abajo</p> -->
+
+
+              <p style="background: green; color: white; font-size: 1.5em; font-weight: 600;">¡Usted ganó 50% de descuento!</p>
+              <p style="font-size: 1.5em;"><span style="text-decoration: line-through;">&nbsp; $39 &nbsp;</span> por solo <b style="color: white;">$19.50</b></p>
+
               <button target="_self" class="button linkCheckout link-stored call_to_action_green" data-theme="button" onclick="redirect()">
                 QUIERO ACCEDER AL "PROTOCOLO ANTI-GRASA"
                 <small> <em>(atención: ultimas unidades disponibles)</em> </small>
@@ -537,7 +542,7 @@
 
     function redirect() {
       let htmt_pid = "A70191894T";
-      // let htmt_off = "pb0f7079";
+      let htmt_off = "brxaohbe";
       location.href = "https://pay.hotmart.com/" + htmt_pid + "?checkoutMode=10&split=12&utm_source="+utm_source+"&utm_campaign="+utm_campaign+"&utm_medium="+utm_medium+"&utm_content="+utm_content+"&sck=XBR-PZB97-"+utm_source+"-"+utm_campaign+"-"+utm_medium+"-"+utm_content;
     }
 
